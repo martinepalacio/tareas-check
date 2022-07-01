@@ -17,14 +17,14 @@ const Tarea = (props) => {
 
   return (
     <div>
-      <div className="listaTareas">
+      <div className="Tareas">
         <b style={tached}>{props.tarea.descripcion}</b>
         <input type="checkbox" onChange={updateEstado} value={props.tarea.id} />
         <FaTrashAlt
           style={icon}
           onClick={() => onDlt(props.tarea)}
           className="icon"
-          value={props.tarea.id}
+          value={props.tarea.id} 
         />
       </div>
     </div>

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./styles.css";
 import AddTask from "./components/button.jsx";
 import Tareas from "./components/tareas.jsx";
-import Filter from "./components/filtro.jsx";
 import tareasjson from "./components/tareas.json";
 
 export default function App() {
@@ -39,13 +38,9 @@ export default function App() {
     setTasks(newArray1);
   };
   return (
-    <div>
+    <div className="body">
       <h1>Tareas Check</h1>
       <div>
-        <button onClick={filter} value="true">
-          click
-        </button>
-        <Filter filter={filter} />
         <hr />
         <AddTask onAddTask={onAddTask} />
         <Tareas

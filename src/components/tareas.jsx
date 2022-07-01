@@ -2,7 +2,7 @@ import Tarea from "./tarea.jsx";
 
 const Tareas = (props) => {
   return (
-    <div>
+    <div className="tasksBox">
       {props.tasks.map((e) => (
         <Tarea
           onDeleteTask={props.onDeleteTask}
