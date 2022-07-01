@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "descripcion": "Terminar app",
+    "estado": true
+  },
+  {
+    "id": "2",
+    "descripcion": "Lavar la ropa",
+    "estado": true
+  },
+  {
+    "id": "3",
+    "descripcion": "Lavar los platos",
+    "estado": true
+  },
+  {
+    "id": "4",
+    "descripcion": "Estudiar",
+    "estado": true
+  },
+  {
+    "id": "5",
+    "descripcion": "Sacar la basura",
+    "estado": true
+  }
+]
