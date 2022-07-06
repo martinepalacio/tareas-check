@@ -1,0 +1,29 @@
+[33mcommit b1f58d9634ff29c926d91771a702c2aeddd6bb6b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Martin Palacio <martinepalacio@hotmail.com.ar>
+Date:   Wed Jul 6 09:32:54 2022 -0300
+
+    se modifica css y se agrega localStorage
+
+[33mcommit 26a016c8385d5dd1e96e2afa0d41612306ba02b1[m[33m ([m[1;31mtareas-check/master[m[33m)[m
+Author: Martin Palacio <martinepalacio@hotmail.com.ar>
+Date:   Fri Jul 1 17:23:24 2022 -0300
+
+    se actualiza branch
+
+[33mcommit e2d7a1a9a179eeb295ec59e658ffc2b925edd8b6[m
+Author: Martin Palacio <martinepalacio@hotmail.com.ar>
+Date:   Fri Jul 1 14:44:36 2022 -0300
+
+    se modifico para hacer compatible con vsCode
+
+[33mcommit 042f6bb599a3d17ac5cbae76c115722644722fa2[m
+Author: Martin Palacio <martinepalacio@hotmail.com.ar>
+Date:   Fri Jul 1 14:12:53 2022 -0300
+
+    inicio la app
+
+[33mcommit 35bbdc420a3e54b9e336738f1e7d1f3bc312d10a[m
+Author: Martin Palacio <martinepalacio@hotmail.com.ar>
+Date:   Fri Jul 1 14:08:07 2022 -0300
+
+    Initialize project using Create React App
