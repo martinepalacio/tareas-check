@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.css";
 import AddTask from "./components/button.jsx";
 import Tareas from "./components/tareas.jsx";
 import tareasjson from "./components/tareas.json";
 
 export default function App() {
-  const [tasks, setTasks] = useState(tareasjson);
+  const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks")));
 
   const onAddTask = (newTask) => {
     setTasks([...tasks, newTask]);
@@ -24,31 +24,21 @@ export default function App() {
     });
     setTasks(newArray);
   };
-  const filter = (e) => {
-    let newArray1 = tasks.filter((tsk) => {
-      if (e.target.value === "true") {
-        return !tsk.estado;
-      }
-      if (e.target.value === "false") {
-        return tsk.estado;
-      } else {
-        return tsk;
-      }
-    });
-    setTasks(newArray1);
-  };
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks))
+  })
   return (
     <div className="body">
       <h1>Tareas Check</h1>
-      <div>
         <hr />
-        <AddTask onAddTask={onAddTask} />
-        <Tareas
-          tasks={tasks}
-          onChecked={onChecked}
-          onDeleteTask={onDeleteTask}
-        />
-      </div>
+        <div className="tareas">
+          <AddTask onAddTask={onAddTask} />
+          <Tareas
+            tasks={tasks}
+            onChecked={onChecked}
+            onDeleteTask={onDeleteTask}
+          />
+        </div>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form'
@@ -19,6 +19,7 @@ const AddTask = ({ onAddTask }) => {
     });
     setText((e.target.value = ""));
   };
+
   return (
     <form className="addForm" onSubmit={onSubmit}>
       <Form.Control 
@@ -29,7 +30,7 @@ const AddTask = ({ onAddTask }) => {
         placeholder="Agregue una nueva tarea"
         value={texto}
         className="addInput" />
-      <Button type="submit" variant="outline-primary">Agregar</Button>{' '}
+      <Button type="submit" variant="dark">Agregar</Button>{' '}
     </form>
   );
 };

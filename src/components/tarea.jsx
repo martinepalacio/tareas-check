@@ -1,4 +1,5 @@
 import { FaTrashAlt } from "react-icons/fa";
+import Form from 'react-bootstrap/Form';
 
 const Tarea = (props) => {
   const tached = {
@@ -19,13 +20,20 @@ const Tarea = (props) => {
     <div>
       <div className="Tareas">
         <b style={tached}>{props.tarea.descripcion}</b>
-        <input type="checkbox" onChange={updateEstado} value={props.tarea.id} />
-        <FaTrashAlt
-          style={icon}
-          onClick={() => onDlt(props.tarea)}
-          className="icon"
-          value={props.tarea.id} 
-        />
+        <div className="icons">
+          <Form.Check 
+            type="checkbox"
+            id="default-checkbox"
+            onChange={updateEstado} 
+            value={props.tarea.id}
+          />
+          <FaTrashAlt
+            style={icon}
+            onClick={() => onDlt(props.tarea)}
+            className="icon"
+            value={props.tarea.id} 
+          />
+        </div>
       </div>
     </div>
   );
